@@ -1,0 +1,8 @@
+# Configuración de Netlify para redirigir peticiones API al backend
+# Netlify actúa como intermediario seguro, permitiendo el acceso desde redes corporativas
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://harvard-sports-mating-guides.trycloudflare.com/api/:splat"
+  status = 200
+  force = true
